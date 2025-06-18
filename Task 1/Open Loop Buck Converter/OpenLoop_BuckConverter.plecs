@@ -28,7 +28,7 @@ Plecs {
   AlgebraicLoopWithStateMachineMsg "3"
   AssertionAction "1"
   FixedPointDatatypeOverride "1"
-  InitializationCommands ""
+  InitializationCommands "Parameter"
   InitialState  "1"
   SystemState   ""
   TaskingMode   "1"
@@ -53,9 +53,9 @@ Plecs {
   ScriptsDialogGeometry ""
   ScriptsDialogSplitterPos "0"
   Schematic {
-    Location      [0, 26; 1280, 632]
+    Location      [1, 30; 638, 628]
     ZoomFactor    1
-    SliderPosition [0, 0]
+    SliderPosition [511, 0]
     ShowBrowser   off
     BrowserWidth  100
     Component {
@@ -68,7 +68,7 @@ Plecs {
       LabelPosition north
       Parameter {
         Variable      "L"
-        Value         "6e-4"
+        Value         "L"
         Show          off
       }
       Parameter {
@@ -87,7 +87,7 @@ Plecs {
       LabelPosition west
       Parameter {
         Variable      "C"
-        Value         "52e-6"
+        Value         "C"
         Show          off
       }
       Parameter {
@@ -106,7 +106,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "R"
-        Value         "2.4"
+        Value         "Rload"
         Show          off
       }
     }
@@ -154,7 +154,7 @@ Plecs {
       LabelPosition east
       Parameter {
         Variable      "V"
-        Value         "24"
+        Value         "Vin"
         Show          off
       }
     }
@@ -371,12 +371,12 @@ Plecs {
       }
       Parameter {
         Variable      "f"
-        Value         "10000"
+        Value         "fsw"
         Show          off
       }
       Parameter {
         Variable      "DutyCycle"
-        Value         "0.5"
+        Value         "D"
         Show          off
       }
       Parameter {
